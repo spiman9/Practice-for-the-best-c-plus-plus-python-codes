@@ -12,9 +12,12 @@ while i< len(s):
         l.append(temp)
         temp = s[i]
     i+=1
+l.append(temp)
 l2 = []
+
+print(l)
 for s in l:
-    temp = ""
+    temp = str()
     for ch in s:
         if ch.isupper():
             ch = ch.lower()
@@ -23,6 +26,5 @@ for s in l:
             ch = ch.upper()
             temp+=ch
     l2.append(temp)
-l2.append(temp)
 for s in l2:
     print(s)
