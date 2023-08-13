@@ -5,15 +5,10 @@ class Complex{
     float real , img;
 
     public:
-    Complex(){
-        real =0;
-        img =0;
-    }
+    // Inline Constructor
+    Complex():real(0) , img(0){}
 
-    Complex(float a , float b){
-        real = a;
-        img = b;
-    }
+    Complex(float a , float b):real(a) , img(b){}
 
     Complex(Complex & c){
         this->real = c.real;
