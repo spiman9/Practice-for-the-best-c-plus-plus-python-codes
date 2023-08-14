@@ -6,7 +6,7 @@ class Complex{
     int real;
     int img;
 
-    
+    // INLINE CONSTRUCTOR
     Complex(): real(0) , img(0){}
 
     Complex(int real , int img){
@@ -42,7 +42,7 @@ void Complex::printHeading(){
 
 
 // OVERLOADING THE INSERTION OPERATOR
-ostream& operator << (ostream& out , Complex &c){
+ostream& operator << (ostream &out , Complex c){
     out << c.img << "i + " << c.real << endl;
     return out;
 }
