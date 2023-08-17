@@ -46,9 +46,30 @@ class Complex{
         return temp;
     }
 
+    // Static methods for the same
+    static Complex add(Complex c1 , Complex c2){
+        Complex t1 = new Complex(c1);
+        t1.real += c2.real;
+        t1.img += c2.img;
+        return t1;
+    }
+
+    static Complex subtract(Complex c1 , Complex c2){
+        Complex t1 = new Complex(c1);
+        t1.real -= c2.real;
+        t1.img -= c2.img;
+        return t1;
+    }
+
 
     void display(){
         System.out.println("Complex Number : " + img + "i +  " + real);
+    }
+
+    //Override the tostring function to print
+    @Override
+    public String toString(){
+        return "Complex Number : " + img + "i + " + real;
     }
 
 
@@ -77,6 +98,8 @@ class Complex{
         c4.display();
 
         sc.close();
+
+        System.out.println(c1);
         // System.out.println("Hashcode : " + c1.hashCode() + " " + c1.substring(0 , 3));
     }
 
