@@ -49,7 +49,7 @@ void PRINT(vector<vector<bool>>vis){
             if(x){
                 cout << "1 ";
             }else{
-                cout << "0 ";
+                cout << "* ";
             }
         }
         cout << endl;
