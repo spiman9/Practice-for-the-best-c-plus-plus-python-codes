@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 int isPrime(int num){
     if(num == 1){
         return 0;
@@ -16,6 +17,8 @@ int isPrime(int num){
     }
     return 1;
 }
+
+
 int main(){
     string s;
     while(getline(cin , s)){
@@ -27,3 +30,4 @@ int main(){
         }
     }
 }
+
